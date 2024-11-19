@@ -12,6 +12,6 @@ Feature: Chat Functionality
     Then I should see my message in the chat
 
   Scenario: View message history
-    Given there are existing messages in the chat
+    And there are existing messages in the chat
     When I am in the chat room
     Then I should see the message history
