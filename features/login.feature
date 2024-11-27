@@ -1,3 +1,4 @@
+@UI
 Feature: Login Functionality
   As a user
   I want to be able to log in

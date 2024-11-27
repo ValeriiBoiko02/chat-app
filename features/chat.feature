@@ -1,3 +1,4 @@
+@UI
 Feature: Chat Functionality
   As a logged in user
   I want to be able to send and receive messages

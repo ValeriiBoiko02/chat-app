@@ -19,10 +19,11 @@ export const config: WebdriverIO.Config = {
    reporters: [
      ['spec', {}],
      ['allure', {
-       outputDir: 'allure-results',
-       disableWebdriverStepsReporting: true,
-       disableWebdriverScreenshotsReporting: false,
-       disableHooks: true, 
+      outputDir: 'allure-results', 
+      disableWebdriverStepsReporting: true,
+      disableWebdriverScreenshotsReporting: false,
+      disableHooks: true,
+      useCucumberStepReporter: true
      }]
    ],
    cucumberOpts: {
@@ -32,12 +33,13 @@ export const config: WebdriverIO.Config = {
      dryRun: false,
      failFast: false,
      name: [],
+     ignoreHooks: true,
      snippets: true,
      source: true,
      strict: false,
-     tagExpression: "",
+     tagExpression: '@UI or @API',
      timeout: 60000,
-     ignoreUndefinedDefinitions: false,
+     ignoreUndefinedDefinitions: true,
      format: ["@cucumber/pretty-formatter"],
      formatOptions: {
        snippetInterface: "async-await",

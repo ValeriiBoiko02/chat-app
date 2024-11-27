@@ -1,3 +1,4 @@
+@API
 Feature: API Functionality
 
   Scenario: Retrieve messages successfully
