@@ -64,7 +64,11 @@ Make sure MongoDB is running locally on port 27017. The application will automat
 npm install
 
 # Run all tests
-npm run wdio
+npm run test:all 
+# Run UI tests
+npm run test:ui 
+# Run API tests
+npm run test:api 
 ```
 
 ## Test Reports
@@ -73,8 +77,7 @@ After running the tests, you can find the Allure report in the `allure-results` 
 
 ```bash
 npm install -g allure-commandline
-allure generate allure-results --clean
-allure open
+npm run allure-report 
 ```
 
 ## Default Test User
